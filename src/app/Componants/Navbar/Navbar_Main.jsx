@@ -4,7 +4,7 @@ import NavbarBigDevice from './NavbarBigDevice'
 
 const Navbar_Main = () => {
   return (
-    <div>
+    <div className=' '>
       <NavbarSmallDevice/>
       <NavbarBigDevice />
     </div>

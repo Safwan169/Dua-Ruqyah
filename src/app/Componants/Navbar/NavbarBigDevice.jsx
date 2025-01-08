@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { CiSearch } from "react-icons/ci";
 import { MdArrowDropDown } from "react-icons/md";
 
 const NavbarBigDevice = () => {

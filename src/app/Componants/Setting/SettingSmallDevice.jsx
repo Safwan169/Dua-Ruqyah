@@ -22,8 +22,7 @@ export default function SettingSmallDevice() {
 
 
   return (
-    // <>
-    // </>
+  
     <Dialog open={setting} onClose={setSetting} className="relative z-50">
     <DialogBackdrop
       transition

@@ -7,10 +7,8 @@ export default function Home() {
   return (
     <div className=' flex mb-10 '>
 
-     {/* <div> */}
      <CategoryHeder/>
      <LeftCategoryForSmallDevice/>
-     {/* </div> */}
       <MainContent />
     </div>
   );
