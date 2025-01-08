@@ -9,7 +9,7 @@ const SettingMain = () => {
         <Setting />
       </div>
       <div className="block xl:hidden">
-        {/* <SettingSmallDevice/> */}
+        <SettingSmallDevice/>
       </div>
     </>
   );
