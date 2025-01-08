@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import LeftNavigationBigDevice from "@/app/Componants/Left_Navigation/LeftNavigatinBigDevice";
+import NavbarBigDevice from "@/app/Componants/Navbar/NavbarBigDevice";
+import Setting from "@/app/Componants/Setting/Setting";
+import ContextProvider from "@/app/ContextProvider"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,9 +28,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+        className={`${geistSans.variable} ${geistMono.variable} bg-[#ebeef2] antialiased`}
+        >
+        <ContextProvider>
+        <div className="flex p-10 h-screen overflow-hidden text-center  ">
+          <LeftNavigationBigDevice />
+          <div className=" w-screen ">
+            <header className=" ">
+              <NavbarBigDevice />
+            </header>
+
+            <div className="flex justify-between   h-full  ">
+              <>
+
+              {children}
+              </>
+
+              <Setting />
+            </div>
+          </div>
+        </div>
+
+        </ContextProvider>
       </body>
     </html>
   );
