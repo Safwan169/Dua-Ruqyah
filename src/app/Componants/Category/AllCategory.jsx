@@ -1,7 +1,7 @@
 
 'use client'
 import { useContext } from "react";
-import SubCategory from "./SubCategory/subCategory";
+import SubCategory from "./SubCategory/SubCategory";
 import { my_context } from "@/app/ContextProvider";
 const AllCategory = ({ data}) => {
 
