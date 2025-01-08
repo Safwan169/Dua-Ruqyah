@@ -33,7 +33,7 @@ const CategoryHeder = () => {
   const {cartData}=useContext(my_context)
 
   return (
-    <div className="mb-10 mt-2 rounded-2xl">
+    <div className="mb-10 mt-2 hidden xl:block rounded-2xl">
       <div className="w-[350px] mt-4  bg-white mx-10">
         <HeaderText />
         {/* Search Input */}

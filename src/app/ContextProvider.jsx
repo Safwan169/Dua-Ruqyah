@@ -51,7 +51,7 @@ const ContextProvider = ({ children }) => {
   const [subCatId,setSubCatId] = useState(1);
 
 const [duaId,setDuaId]=useState(1)
-
+const [setting,setSetting]=useState(false)
 
   useEffect(() => {
     const fetch = async () => {
@@ -85,6 +85,8 @@ const [duaId,setDuaId]=useState(1)
     setSubCatId,
     duaId,
     setDuaId,
+    setSetting,
+    setting
    
   };
   return <my_context.Provider value={data}>{children}</my_context.Provider>;

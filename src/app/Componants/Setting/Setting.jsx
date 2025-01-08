@@ -30,7 +30,7 @@ const Setting = () => {
     setSettingsId(id);
   };
   return (
-    <div className="bg-white rounded-3xl min-w-[330px] mb-10 mt-5 p-5">
+    <div className="bg-white h-full xl:h-[87%]  xl:rounded-3xl min-w-[330px] mb-10 xl:mt-5 p-5">
       <h1 className="font-bold text-xl">Settings</h1>
 
       <div className="space-y-[15px]">

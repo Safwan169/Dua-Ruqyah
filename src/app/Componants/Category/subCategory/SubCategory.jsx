@@ -14,15 +14,14 @@ const SubCategory = ({data}) => {
     >
       <div
         className={` ${
-          subCatId == data.id ? "text-green-600" : ""
+          subCatId == data?.id ? "text-green-600" : ""
         } flex items-center text-left justify-start `}
       >
         <p className="w-2 h-2 absolute -left-1 bg-green-500 rounded-full "></p>
         {data?.name} <br />
       </div>
       <div>
-        {data?.id == subCatId && (
-          <div className="">
+        {data?.id == subCatId && (<div className="">
             {data?.duas?.map((data, index) => (
               <Dua kay={index} text={data} />
             ))}

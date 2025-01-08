@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import LeftNavigationBigDevice from "@/app/Componants/Left_Navigation/LeftNavigatinBigDevice";
-import NavbarBigDevice from "@/app/Componants/Navbar/NavbarBigDevice";
-import Setting from "@/app/Componants/Setting/Setting";
+import Left_Navigation_Main from "@/app/Componants/Left_Navigation/Left_Navigation_Main";
+import Navbar_Main from "@/app/Componants/Navbar/Navbar_Main";
+import SettingMain from "@/app/Componants/Setting/SettingMain";
 import ContextProvider from "@/app/ContextProvider"
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,11 +31,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-[#ebeef2] antialiased`}
         >
         <ContextProvider>
-        <div className="flex p-10 h-screen overflow-hidden text-center  ">
-          <LeftNavigationBigDevice />
+        <div className="flex p-0 xl:p-10 h-screen overflow-hidden text-center  ">
+          <Left_Navigation_Main />
           <div className=" w-screen ">
             <header className=" ">
-              <NavbarBigDevice />
+              <Navbar_Main />
             </header>
 
             <div className="flex justify-between   h-full  ">
@@ -44,7 +44,7 @@ export default function RootLayout({
               {children}
               </>
 
-              <Setting />
+              <SettingMain />
             </div>
           </div>
         </div>

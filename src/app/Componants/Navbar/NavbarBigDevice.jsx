@@ -5,7 +5,7 @@ import { MdArrowDropDown } from "react-icons/md";
 
 const NavbarBigDevice = () => {
   return (
-    <div className="flex  justify-between">
+    <div className="xl:flex hidden justify-between">
       <div className=" flex mx-10  justify-between items-center w-full ">
         <div className="text-lg font-semibold text-gray-800">Duas Page</div>
 
