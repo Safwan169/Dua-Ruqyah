@@ -56,7 +56,7 @@ const [setting,setSetting]=useState(false)
   useEffect(() => {
     const fetch = async () => {
       const res = await axios.get(
-        `http://localhost:5000/api/duas/${categoryId}`
+        `https://islamic-server.vercel.app/api/duas/${categoryId}`
       );
       try {
         console.log(res?.data, "this is for dua ");

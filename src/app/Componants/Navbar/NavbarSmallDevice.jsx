@@ -12,15 +12,15 @@ const NavbarSmallDevice = () => {
   
     };
   return (
-    <nav className="bg-white shadow-lg px-4 py-2 xl:hidden flex items-center justify-between">
+    <nav className="bg-white shadow-lg z-50 px-4 py-2 xl:hidden flex items-center justify-between">
     {/* Logo and Title */}
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-5">
       <div className="bg-green-500 p-2 rounded-md">
-        <img
-          src="https://via.placeholder.com/30" // Replace with your logo
+        {/* <img
+          src="/Dua.png" // Replace with your logo
           alt="Logo"
           className="w-6 h-6"
-        />
+        /> */}
       </div>
       <h1 className="text-gray-800 font-medium text-lg">Dua & Ruqyah</h1>
     </div>

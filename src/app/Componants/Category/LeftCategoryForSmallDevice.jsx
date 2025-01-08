@@ -51,7 +51,7 @@ export default function AnchorTemporaryDrawer() {
   );
 
   return (
-    <div className='block pl-5 absolute top-0 xl:hidden'>
+    <div className='block  absolute -top-2 xl:hidden'>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           {/* Hamburger Icon Button */}
@@ -61,7 +61,8 @@ export default function AnchorTemporaryDrawer() {
             aria-label="menu"
             onClick={toggleDrawer(anchor, true)}
           >
-            <FiAlignJustify />
+            {/* <FiAlignJustify className=''/> */}
+            <img src="/Dua.png" className='w-14 h-14' alt="" />
 
           </IconButton>
           <Drawer
